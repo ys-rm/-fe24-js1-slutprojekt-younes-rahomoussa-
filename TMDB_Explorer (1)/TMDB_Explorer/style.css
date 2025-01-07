@@ -128,7 +128,7 @@ header {
     margin: 10px 0;
 }
 
-/* Ensure consistent image card layout */
+
 .movie-card .image-container {
     width: 200px;
     height: 300px;
@@ -166,14 +166,14 @@ header {
 
 .movie-details-card .image-container {
     width: 300px;
-    justify-self: center; /* Center the poster within its column */
+    justify-self: center; 
 }
 
 .movie-details-card .image-container img {
-    width: 100%; /* Make the image fully occupy its container */
+    width: 100%; 
     height: auto;
     border-radius: 8px; /* Optional rounded corners for the image */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for better aesthetics */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 .movie-details-card .details {
@@ -191,15 +191,15 @@ header {
 .movie-details-card .details p {
     margin-bottom: 10px;
     font-size: 16px;
-    line-height: 1.5; /* Improves readability */
+    line-height: 1.5; 
 }
 
 .movie-details-card .details .rating {
     font-size: 18px;
     margin-top: 20px;
     font-weight: bold;
-    display: inline-block; /* Keeps it on its own line */
-    color: #007bff; /* Optional highlight color for rating */
+    display: inline-block; 
+    color: #007bff; 
 }
 
 .movie-details-card .details button {
@@ -210,7 +210,7 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    align-self: flex-start; /* Align button to the start of the container */
+    align-self: flex-start;
 }
 
 .movie-details-card .details button:hover {
