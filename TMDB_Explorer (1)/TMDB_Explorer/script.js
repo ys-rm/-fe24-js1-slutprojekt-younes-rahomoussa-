@@ -5,11 +5,11 @@ const BASE_URL = "https://api.themoviedb.org/3";
 document.addEventListener("DOMContentLoaded", () => {
     fetchPopularMovies();
 
-    // Add event listeners for tabs
+    
     document.getElementById("popular-tab").addEventListener("click", fetchPopularMovies);
     document.getElementById("top-rated-tab").addEventListener("click", fetchTopRatedMovies);
 
-    // Add event listener for the search form
+   
     document.getElementById("search-form").addEventListener("submit", (e) => {
         e.preventDefault();
         const query = document.getElementById("query").value.trim();
@@ -139,7 +139,7 @@ function displayPeople(people, sectionTitle) {
 }
 
 
-// Set active tab
+
 function setActiveTab(tabId) {
     document.querySelectorAll(".tab-button").forEach((button) => {
         button.classList.remove("active");
@@ -203,19 +203,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initial bounce-in animation
     anime({
         targets: '#animated-logo',
-        translateY: [-50, 0], // Moves the logo from -50px to its original position
-        opacity: [0, 1], // Fades in the logo
-        duration: 1000, // Duration of the animation in milliseconds
-        easing: 'easeOutElastic(1, .8)', // Elastic easing for a smooth bounce effect
+        translateY: [-50, 0], 
+        opacity: [0, 1], 
+        duration: 1000, 
+        easing: 'easeOutElastic(1, .8)',
         complete: () => {
-            // Continuous zoom-in and zoom-out animation
+          
             anime({
                 targets: '#animated-logo',
-                scale: [1, 1.2], // Zoom in to 1.2x and back to 1x
-                duration: 2000, // Duration of the animation cycle
-                easing: 'easeInOutSine', // Smooth easing for zoom effect
-                direction: 'alternate', // Alternates between zoom in and out
-                loop: true // Keeps the animation continuous
+                scale: [1, 1.2], 
+                duration: 2000, 
+                easing: 'easeInOutSine', 
+                direction: 'alternate',
+                loop: true 
             });
         }
     });
